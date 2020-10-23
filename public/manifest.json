@@ -1,0 +1,10 @@
+{
+  "short_name": "I'm learning here",
+  "name": "I'm learning here"
+  
+  ,
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
