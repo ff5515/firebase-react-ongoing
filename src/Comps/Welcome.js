@@ -4,7 +4,6 @@ import {auth, database} from '../config'
 
 class Welcome extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <div className="container">
         <div className="welcome">
