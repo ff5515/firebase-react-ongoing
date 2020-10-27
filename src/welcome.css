@@ -126,3 +126,34 @@
   font-size: 14px;
   font-weight: normal;
 }
+
+/* =============Welcome Page============== */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.welcome-bold {
+  font: normal normal bold 24px Raleway;
+}
+.welcome {
+  font: normal normal normal 24px Raleway;
+}
+
+.phone-number {
+  font: normal normal bold 14px/16px Raleway;
+  color: #2ac70e;
+  margin-top: 7px;
+  margin-bottom: 18px;
+}
+
+.log-out {
+  color: #c70e0e;
+  font: normal normal bold 14px Raleway;
+  cursor: pointer;
+}

@@ -1,9 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import {auth, database} from './config'
 
-
-// import PrivateRoute from "./PrivateRoute";
 import Form from "./Comps/Form";
 import SignUp from "./Comps/SignUp";
 import Welcome from "./Comps/Welcome";
@@ -18,7 +15,6 @@ class App extends React.Component {
           <Route path="/signin" component={Form} />
           <Route path="/signup" component={SignUp} />
           <Route path="/welcome" component={Welcome} />
-          {/* <PrivateRoute path="/welcome" component={Welcome} /> */}
         </Switch>
       </Router>
     );
