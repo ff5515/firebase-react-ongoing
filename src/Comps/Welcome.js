@@ -1,14 +1,12 @@
 import React from "react";
 import "./../welcome.css";
-import {app, auth, database} from '../config'
+import {app} from '../config'
 import { Link, withRouter } from "react-router-dom";
 import Form from "./Form";
 
 class Welcome extends React.Component {
   constructor(){
     super()
-    
-  
     this.state={
       firstName: '',
       lastName: '',
@@ -18,7 +16,6 @@ class Welcome extends React.Component {
     this.signOut = this.signOut.bind(this);
   }
   
-
     componentDidMount() {
       const userDB = app.database().ref(this.props.uid);
       userDB.on('value', datasnap => this.setState({
@@ -31,7 +28,6 @@ class Welcome extends React.Component {
       }))
     }
 
-
         signOut() {
             this.setState({isLoggedIn: false})
         }
@@ -41,7 +37,6 @@ class Welcome extends React.Component {
     if(!this.state.isLoggedIn) {
       return <Link to="/signin" component={(props) => <Form {...props}  />} />
     } else {
-
       
       return (
         <div className="container">

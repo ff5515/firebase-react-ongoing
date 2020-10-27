@@ -1,5 +1,5 @@
 import React from "react";
-import { Link , Route, Switch} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./../welcome.css";
 import {auth, database} from '../config';
 import Welcome from './Welcome';

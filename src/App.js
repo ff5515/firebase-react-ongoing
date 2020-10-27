@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import {auth, database} from './config'
 
 import Form from "./Comps/Form";
 import SignUp from "./Comps/SignUp";

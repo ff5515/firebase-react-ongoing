@@ -1,8 +1,8 @@
 import React from "react";
-import { Link , Route, Switch, } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Welcome from './Welcome'
 import "./../welcome.css";
-import {app, auth, database} from '../config'
+import {auth} from '../config'
 
 
 class Form extends React.Component {
@@ -13,17 +13,14 @@ class Form extends React.Component {
           email: '',
           password: ''
         },
-        // isLoggedIn: false
       }
     }
-    
     
     onChangeHandler = (e) => {
       this.setState({
         [e.target.type]: e.target.value
       });
     };
-    
     
     authListener = () => {
       console.log(auth.currentUser)
@@ -35,7 +32,6 @@ class Form extends React.Component {
      
     }
     
-      
       render () {
 
       if (this.state.isLoggedIn) {
